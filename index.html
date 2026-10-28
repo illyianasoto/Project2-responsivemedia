@@ -1,76 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="tokens.css">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <div class="site-title">NYC Landmarks</div>
     </header>
-<main>
-    <h1>NYC Landmarks Virtual Tour</h1>
-    <p class="intro">This site highlights some interesting landmarks across New York City's five boroughs.</p>
+    <main>
+        <section class="introduction">
+            <h1>NYC Landmarks Virtual Tour</h1>
+            <p>New York City is filled with landmarks, tourist attractions and historic sites dating from before it was
+                known as New York City to more recent additions. Click through this site to explore!</p>
+        </section>
 
-<!-- Featured image -->
-<picture>
-    <!-- Desktop -->
-    <source
-        media="(min-width: 645px)"
-        srcset="images/AdobeStock_363209219.jpeg">
 
-    <!-- Mobile -->
-    <source
-        media="(max-width: 644px)"
-        srcset="images%20square/JPEG/AdobeStock_363209219.jpg">
 
-    <!-- Fallback -->
-    <img
-        src="images/AdobeStock_363209219.jpg"
-        alt="NYC pedestrian crossing signal">
-</picture>
+        <!-- Responsive YouTube Video -->
+        <section class="intro-video">
+            <h2>Explore New York City</h2>
+            <p class="intro">This site highlights some interesting landmarks across New York City's five boroughs.</p>
+            <div class="videoWrapper ratio-16-9">
+                <iframe src="https://www.youtube.com/embed/GmH42gAW0JQ" title="New York City Video" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        <section class="featured-landmark">
 
-<div class="landmarks-grid">
-<figure>
-<img src="images square/JPEG/pexels-kelsey-caroline-774981359-19122990.jpg" alt="Coney Island Wonder Wheel">
-</figure>
-<figure>
-<img src="images square/JPEG/pexels-loquellano-12404963.jpg" alt="Roosevelt Island Tram">
-</figure>
-<figure>
-<img src="images square/JPEG/pexels-malcolmhill-12360516.jpg" alt="Yankee Stadium">
-</figure>
-<figure>
-<img src="images square/JPEG/pexels-mora-versio-2150673251-34091093.jpg" alt="Statue of Liberty">
-</figure>
-<figure>
-<img src="images square/JPEG/pexels-tracehudson-2424391.jpg" alt="Empire State Building">
-</figure>
-<figure>
-<img src="images square/JPEG/praswin-prakashan-YOCN1a1m_dg-unsplash.jpg" alt="Staten Island Ferry">
-</figure>
+            <h2>New York Street Light</h2>
+            <p>New York City is known for its iconic landmarks, but even the everyday streets are part of what makes the
+                city unique. From busy intersections and glowing crosswalk signals to the constant movement of people
+                and
+                traffic, the streets capture the energy and fast-paced lifestyle that NYC is known for.</p>
 
-</div>
+            <!-- Featured image -->
+            <picture>
+                <!-- Desktop -->
+                <source media="(min-width: 645px)" srcset="images/AdobeStock_363209219.jpeg">
 
-<!-- Responsive YouTube Video -->
-<section class="landmark-video">
-    <h2>Explore New York City</h2>
+                <!-- Mobile -->
+                <source media="(max-width: 644px)" srcset="images%20square/JPEG/AdobeStock_363209219.jpg">
 
-    <div class="videoWrapper ratio-16-9">
-        <iframe
-            src="https://www.youtube.com/embed/GmH42gAW0JQ"
-            title="New York City Video"
-            allowfullscreen>
-        </iframe>
-    </div>
-</section>
+                <!-- Fallback -->
+                <img src="images/AdobeStock_363209219.jpg" alt="NYC pedestrian crossing signal">
+            </picture>
+            <p>
+                <a href="https://stock.adobe.com/images/id/363209219">
+                    Photo by ako-photography / Adobe Stock
+                </a>
+            </p>
+        </section>
 
-    <footer>
-    <p>Site by Illyiana Soto</p>
-</footer>
+        <section class="landmarks">
+            <h2>Explore NYC Landmarks</h2>
 
-</main>
+
+            <div class="landmarks-grid">
+                <div class="landmark">
+                    <figure>
+                        <img src="images square/JPEG/pexels-kelsey-caroline-774981359-19122990.jpg"
+                            alt="Coney Island Wonder Wheel">
+                        <a href="https://www.pexels.com/photo/ferris-wheel-in-amusement-park-19122990/">Photo by Kelsey
+                            Caroline</a>
+                    </figure>
+                    <h2>The Wonder Wheel</h2>
+                </div>
+
+
+                <div class="landmark">
+                    <figure>
+                        <img src="images square/JPEG/pexels-loquellano-12404963.jpg" alt="Roosevelt Island Tram">
+                        <a href="https://www.pexels.com/photo/12404963/">Photo by Raphael Loquellano</a>
+                    </figure>
+                    <h2>The Roosevelt Island Tram</h2>
+                </div>
+
+                <div class="landmark">
+                    <figure>
+                        <img src="images square/JPEG/pexels-malcolmhill-12360516.jpg" alt="Yankee Stadium">
+                        <a href="https://www.pexels.com/photo/12360516/">Photo by Malcolm Hill</a>
+                    </figure>
+                    <h2>The Yankee Stadium</h2>
+                </div>
+
+                <div class="landmark">
+                    <figure>
+                        <img src="images square/JPEG/pexels-mora-versio-2150673251-34091093.jpg"
+                            alt="Statue of Liberty">
+                        <a href="https://www.pexels.com/photo/34091093/">Photo by Mora Versio </a>
+                    </figure>
+                    <h2>The Statue of Liberty</h2>
+                </div>
+
+                <div class="landmark">
+                    <figure>
+                        <img src="images square/JPEG/pexels-tracehudson-2424391.jpg" alt="Empire State Building">
+                        <a href="https://www.pexels.com/photo/2424391/">Photo by Trace Hudson</a>
+                    </figure>
+                    <h2>The Empire State Building</h2>
+                </div>
+
+                <div class="landmark">
+                    <figure>
+                        <img src="images square/JPEG/praswin-prakashan-YOCN1a1m_dg-unsplash.jpg"
+                            alt="Staten Island Ferry">
+                        <a href="https://unsplash.com/photos/YOCN1a1m_dg">Photo by Praswin Prakashan</a>
+                    </figure>
+                    <h2>The Staten Island Ferry</h2>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            <p>Site by Illyiana Soto</p>
+        </footer>
+
+    </main>
 </body>
+
 </html>
